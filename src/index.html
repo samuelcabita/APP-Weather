@@ -23,14 +23,15 @@
             <input type="text" name="buscar" id="buscar" placeholder="Buscar">
         </form>
         <div class="camara">
-            <h1>Acesso à Câmera</h1>
+            <Button>camara</Button>
             <p id="errorMsg"></p>
             <video id="video" autoplay playsinline></video>
-            
+        </div>    
     </section>
     <script>
         const videoElement = document.getElementById('video');
         const errorMsgElement = document.getElementById('errorMsg');
+        const Camara = document.querySelector('Button')
 
         // Função para acessar a câmera
         async function startCamera() {
@@ -41,9 +42,13 @@
                 errorMsgElement.textContent = `Erro ao acessar a câmera: ${error.message}`;
             }
         }
+        Camara.addEventListener('click',()=>{
+         window.onload=startCamera;
+
+        })
 
         // Iniciar a câmera ao carregar a página
-        window.onload = startCamera;
+        
     </script>
 </body>
 
