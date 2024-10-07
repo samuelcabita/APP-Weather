@@ -23,7 +23,7 @@
             <input type="text" name="buscar" id="buscar" placeholder="Buscar">
         </form>
         <div class="camara">
-            <Button>camara</Button>
+            <button id="camera">camara</button>
             <p id="errorMsg"></p>
             <video id="video" autoplay playsinline></video>
         </div>    
@@ -31,7 +31,7 @@
     <script>
         const videoElement = document.getElementById('video');
         const errorMsgElement = document.getElementById('errorMsg');
-        const Camara = document.querySelector('Button')
+        const Camara = document.getElementById('camera')
 
         // Função para acessar a câmera
         async function startCamera() {
