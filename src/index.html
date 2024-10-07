@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <title>App weather</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../src/assects/Logo (1).png" alt="">
+        </div>
+
+    </header>
+    <section id="primaray">
+        <h1>Boas vindas ao <span>TypeWeather</span></h1>
+        <h3>Escolha um local para ver a previsão do tempo</h3>
+        <form action="">
+            <input type="text" name="buscar" id="buscar" placeholder="Buscar">
+        </form>
+        <div class="camara">
+            <h1>Acesso à Câmera</h1>
+            <p id="errorMsg"></p>
+            <video id="video" autoplay playsinline></video>
+            
+    </section>
+    <script>
+        const videoElement = document.getElementById('video');
+        const errorMsgElement = document.getElementById('errorMsg');
+
+        // Função para acessar a câmera
+        async function startCamera() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                videoElement.srcObject = stream;
+            } catch (error) {
+                errorMsgElement.textContent = `Erro ao acessar a câmera: ${error.message}`;
+            }
+        }
+
+        // Iniciar a câmera ao carregar a página
+        window.onload = startCamera;
+    </script>
+</body>
+
+</html>

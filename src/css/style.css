@@ -1,0 +1,227 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../assects/Background.png");
+}
+@font-face {
+    font-family: Nunito;
+    src: url();
+}
+header .logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+#primaray{
+    margin-top: 192px;
+}
+#primaray h1{
+    
+    font-family: "Nunito";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+}
+#primaray h1>span{
+    color: #8FB2F5;
+}
+#primaray h3{
+
+    font-family: "Nunito";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: center;
+    color: #BFBFD4;
+}
+section form{
+    display: flex;
+    justify-content:center;
+    margin-top: 32px;
+}
+section form input{
+    width: 311px;
+    height:56px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 8px 0px 0px 0px;
+    background: #1E1E29;
+    border: none;
+    border-radius: 8px;
+    color:#7F7F98;
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+}
+.container_top{
+    display: flex;
+    justify-content: center;
+}
+.container_top .card-box{
+    background-image: url("../assects/Background\ \(1\).png");
+    width: 448px;
+    height: 304px;
+    border-radius: 8px;
+    margin: 18px;
+}
+.container_top .card-box .card-header{
+
+}
+.container_top .card-box .card-header>h2{
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    color: #FAFAFA;
+    margin: 20px 0 0 16px;
+}
+.container_top .card-box .card-header>h3{
+    font-family: "Nunito";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.8px;
+    color:#FAFAFA;
+    margin: 2px 0 0 16px;
+}
+.container_top .card-box
+ .card-body{
+    display: flex;
+    gap: 72px;
+ }
+.container_top .card-box
+ .card-body .card-grau{
+    width: 105px;
+    height: 116px;
+    padding: 4px 0px 0px 0px;
+    margin: 111px 0 16px 16px;
+ }
+ .container_top .card-box
+ .card-body .card-grau>h1{
+    font-family: "Nunito";
+    font-size: 41px;
+    font-weight: 800;
+    line-height: 57.6px;
+    color: #FFFFFF;
+ }
+ .container_top .card-box
+ .card-body .card-grau>h2{
+     
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px; 
+    color: #FFFFFF;
+    margin-top: 8px;
+ }
+ .container_top .card-box
+ .card-body .card-grau>h3{
+     
+    font-family: "Nunito";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    color: #FFFFFF;
+ }
+ .container_top .card-box
+ .card-body .moon{
+     width: 160px;
+     height: 160px;
+     margin-top: 83px;
+ }
+.caixa-clima{
+    display: flex;
+    justify-content: center;
+}
+.caixa-clima .clima{
+    background:#16161F;
+    width: 359px;
+    height: 330px;
+    padding: 4px 16px 4px 16px;
+    list-style: none;
+    border-radius: 12px;
+ }
+ .caixa-clima .clima li{
+    padding: 16px 0px 16px 0px;
+    display: flex;
+    align-items: center;
+ }
+ .caixa-clima .clima li .card{
+    display: flex;
+    justify-content: space-between;
+ }
+ .caixa-clima .clima li .card:nth-of-type(1){
+    width: 294px;
+ }
+ .caixa-clima .clima li .card>h1{
+    font-family: "Nunito";
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 19.6px;
+    text-align: center;
+    color: #fff;
+    margin: 0 145px 0 5px;
+ }
+ .caixa-clima .clima li .card>h2{
+    font-family: "Nunito";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.6px;
+    text-align: center;
+    color: #fff;
+
+ }
+ .card-weekend{
+    display: flex;
+    justify-content: center;
+ }
+ .card-weekend .day-weekend{
+    background:#16161F;
+    width: 359px;
+    height: 176px;
+    margin: 8px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-weekend .day-weekend >li{
+    width: 67px;
+    height: 152px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-weekend .day-weekend >li img{
+    width: 56px;
+    height: 56px;
+    margin: 4px 5px;
+}
+ .card-weekend .day-weekend li >h2{
+    font-family: "Nunito";
+    color:#FAFAFA ;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.6px;
+    text-align: center;
+    margin-bottom: 4px;
+
+}
+.card-weekend .day-weekend li h4{
+    font-family: "Nunito";
+    color: #7F7F98;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.6px;
+    text-align: center;
+
+}
+.card-weekend .day-weekend li h4:nth-of-type(1){
+    color: #FAFAFA;
+}
